@@ -1,0 +1,16 @@
+#Problem 3: Find the Fibonacci Number Using Recursion
+#Problem 3: Find the Fibonacci Number Using Recursion
+def fibonacci(n):
+    #base case 
+    if n == 0:
+        return 0
+    elif n == 1:
+        return 1
+    #recursive case
+    return fibonacci(n-1)+fibonacci(n-2)
+n=int(input("enter the number: "))
+
+if n < 0:
+    print("Fibonacci does not exist for negative numbers")
+else:
+    print("Fibonacci of", n, "is", fibonacci(n))

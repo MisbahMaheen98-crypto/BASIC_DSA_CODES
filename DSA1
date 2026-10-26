@@ -1,0 +1,12 @@
+def print_numbers(i,n):
+    #base case
+    if i > n:
+        return
+    #PRINT THE CURRENT NUMBER
+    print(i)
+    #RECURSIVE CALL
+    print_numbers(i + 1, n)# Function calls itself
+
+
+n=int(input("Enter a number: "))
+print_numbers(1,n)

@@ -1,0 +1,10 @@
+#FIND THE SUM OF DIGITS 
+
+def sum_digits(n):
+    # Base Case 
+    if n ==0:
+        return 0
+    #recursive case 
+    return (n%10)+ sum_digits(n//10)
+num = int(input("enter the number: "))
+print("sum of digits=",sum_digits(num))

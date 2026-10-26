@@ -1,0 +1,16 @@
+def factorial(n):
+    #base case
+    if n ==0 or n ==1:
+        return 1 
+    #recusive case 
+    return n*factorial(n-1)
+
+num=int(input("Enter a number: "))
+if num < 0:
+    print("Factorial does not exist for negative numbers")
+else:
+    print("Factorial of", num, "is", factorial(num))
+
+'''The key point: We use return to send the calculated result back to the previous function call. Multiplication combines the current number with the result of the smaller factorial.
+
+If we wrote only factorial(n - 1), we would not multiply the returned result by n, so the factorial would not be calculated correctly.'''
